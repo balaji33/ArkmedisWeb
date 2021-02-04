@@ -1,0 +1,232 @@
+.courses-details-block {
+    margin-top: 40px;
+}
+
+.courses-details-block li {
+    width: 100%;
+}
+
+.other-pages li a {
+    color: #000 !important;
+}
+
+.other-pages .logo {
+    width: 49%;
+}
+
+.header-menu.other-pages  {
+    position: static !important;
+    top: 0;
+    right: 0;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    left: 0;
+}
+
+.header.other-pages {
+    height: 100% !important;
+}
+
+.other-pages .logo img {
+    height: auto;
+    width: 165px;
+    margin-top: 5px;
+}
+
+.other-pages li {
+    margin-top: 8px;
+} 
+
+.left-categories img {
+    width: 22px;
+    margin-right: 15px;
+}
+
+.left-categories li {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 14%);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.left-categories li a {
+    display: inline-block;
+    width: 100%;
+    padding-left: 15px !important;
+    padding: 20px 0px;
+    color: #6d97d3;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.categories-card {
+    box-shadow: 0 0 10px rgb(0 0 0 / 14%);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.courses-details-inner.container {
+    padding: 0;
+}
+
+.categories-card-top {
+    position: relative;
+}
+
+.categories-card-top:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.left-categories a.active {
+    background: #06266c;
+    color: #ede9e9;
+    border-radius: 5px;
+}
+
+.categories-card-top img {
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.categories-card-bottom h4 {
+    font-size: 14px;
+    color: #6d97d3;
+    font-weight: 600;
+}
+
+.categories-card-bottom {
+    padding: 15px 15px;
+}
+
+.categories-card-bottom li {
+    margin-left: 18px;
+    font-size: 15px;
+    color: #a59898;
+}
+
+.categories-card-bottom li:before {
+    content: "\f111";
+    position: absolute;
+    left: 30px;
+    margin-top: 2px;
+    font-family: "FontAwesome";
+    font-size: 12px;
+    color: #54b66a;
+}
+
+.courses-details-block h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-family: "RalewayLight";
+    letter-spacing: 2px;
+}
+
+.fixedElement {
+    background-color: #fff;
+    width:100%;
+    z-index:100;
+    box-shadow: 0 0 5px rgb(0 0 0 / 14%);
+    padding: 15px 15px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+}
+
+.sub-title-course {
+    width: 50%;
+    float: left;
+}
+
+.price-course {
+    text-align: end;
+}
+
+.price-course span {
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+.price-course span:before {
+    content: "\f156";
+    position: absolute;
+    margin-left: -15px;
+    font-family: "FontAwesome";
+    font-size: 18px;
+    color: #eb7072;
+}
+
+.left-categories .active {
+    background: #06266c;
+    color: #ede9e9;
+    border-radius: 5px;
+}
+
+.buy-link {
+    background: #eb7072;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+.sub-title-course a {
+    color: #000;
+    font-size: 20px;
+}
+
+.sub-title-course .preview-btn {
+    font-size: 14px;
+    position: relative;
+    top: 0px;
+    color: #fff;
+    left: 8px;
+    background: #6d97d3;
+    padding: 4px 30px 4px 12px;
+    border-radius: 50px;
+    z-index: 100;
+}
+
+.sub-title-course .preview-btn::after {
+    content: "\f04b";
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: .3s;
+    font-family: "FontAwesome";
+    font-size: 10px;
+    color: #ffffff;
+}
+.sub-title-course.demo-video-btn {
+    position: static;
+}
+
+.global-btn {
+    position: relative;
+    outline: none;
+    z-index: 9;
+    overflow: hidden;
+    border: 0;
+    display: inline-table;
+}
+
+
+.title-sub {
+    font-family: "RalewayLight";
+    font-size: 18px;
+    font-weight: 600;
+}
