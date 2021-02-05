@@ -14,6 +14,7 @@ $(window).on("scroll", function () {
   }
 });
 
+//header-links-change-add-class
 $(window).on("scroll", function () {
   var scroll = $(window).scrollTop();
 
@@ -24,6 +25,7 @@ $(window).on("scroll", function () {
   }
 });
 
+//mobile-menu
 $(document).ready(function () {
   $(".header-menus li").hover(
     function () {
@@ -39,6 +41,7 @@ $(document).ready(function () {
   });
 });
 
+//slider-categories
 jQuery(document).ready(function ($) {
   $(".slider").slick({
     dots: false,
@@ -68,6 +71,7 @@ jQuery(document).ready(function ($) {
     ],
   });
 
+  //live classes-slider
   $(".live-classes-slider").slick({
     dots: false,
     infinite: true,
@@ -97,6 +101,7 @@ jQuery(document).ready(function ($) {
   });
 });
 
+//demo-video-popup
 $(document).ready(function () {
   // get video source from data-src button
   var $videoSrc;
@@ -119,6 +124,7 @@ $(document).ready(function () {
   });
 });
 
+//Fixed-element-when-scroll
 $(window).scroll(function (e) {
   var $el = $(".fixedElement");
   var isPositionFixed = $el.css("position") == "fixed";
@@ -130,11 +136,13 @@ $(window).scroll(function (e) {
   }
 });
 
+//remove active-class
 $("body").on("click", "li", function () {
   $("li.active").removeClass("active");
   $(this).addClass("active");
 });
 
+//about-arkmedis-counting
 var a = 0;
 $(window).scroll(function () {
   var oTop = $("#about-counting").offset().top - window.innerHeight;
@@ -164,3 +172,29 @@ $(window).scroll(function () {
     a = 1;
   }
 });
+
+//login-block-popup
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('credentials-main-block');
+
+signUpButton.addEventListener('click', () =>
+container.classList.add('right-panel-active'));
+
+signInButton.addEventListener('click', () =>
+container.classList.remove('right-panel-active'));
+
+//back-to-top
+var btn = $('#button');
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+

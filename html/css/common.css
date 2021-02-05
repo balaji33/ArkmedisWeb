@@ -669,13 +669,234 @@ li.drop-icon:before {
   font-weight: 600;
   color: #33b868;
   font-size: 20px;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   margin-top: 8px;
 }
 
 .about-title {
   font-size: 14px;
 }
+
+/*--------------------------login-signup--------------*/
+
+.modal-backdrop {
+  /* bug fix - no overlay */
+  display: none;
+}
+
+.credentials-main-block {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.credentials-block-inner form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+}
+
+.modal.show {
+  background: #00000087;
+}
+
+.left-cred-inner img {
+  width: 200px;
+}
+
+.left-cred-inner p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.credentials-block-inner input {
+  background: #eee;
+  border: none;
+  padding: 8px 15px;
+  margin: 8px 0;
+  width: 100%;
+  outline: none;
+}
+
+label {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.credentials-block-inner {
+  position: absolute;
+  top: 60px;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.signin-block {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.signup-block {
+  left: 0;
+  width: 50%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.left-cred-block {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.left-cred-overlay {
+  background: #00b09b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateY(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.left-cred-inner {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateY(0);
+}
+
+.overlay-left {
+  transform: translateY(-20%);
+}
+
+/* Move signin to right */
+.credentials-main-block.right-panel-active .signin-block {
+  transform: translateY(100%);
+}
+
+/* Move overlay to left */
+.credentials-main-block.right-panel-active .left-cred-block {
+  transform: translateX(-100%);
+}
+
+/* Bring signup over signin */
+.credentials-main-block.right-panel-active .signup-block {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+/* Move overlay back to right */
+.credentials-main-block.right-panel-active .left-cred-overlay {
+  transform: translateX(50%);
+}
+
+/* Bring back the text to center */
+.credentials-main-block.right-panel-active .overlay-left {
+  transform: translateY(0);
+}
+
+/* Same effect for right */
+.credentials-main-block.right-panel-active .overlay-right {
+  transform: translateY(20%);
+}
+
+.title-credentials {
+  text-align: center;
+}
+
+.cred-btn {
+  padding: 10px;
+  border-radius: 50px;
+  background: #6d97d3;
+  margin-top: 20px;
+  color: #fff;
+}
+.swipe-btn {
+  width: 50%;
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 5px 0;
+  outline: none;
+}
+
+.already-ac {
+  position: relative;
+  top: 85px;
+}
+
+
+/*--------------------------back-to-top--------------*/
+
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /*-------------------------footer--------------------*/
 .footer {

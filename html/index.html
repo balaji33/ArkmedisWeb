@@ -26,6 +26,8 @@
 </head>
 
 <body>
+     <!-- Back to top button -->
+     <a id="button"></a>
     <nav class="header-menu header" id="header">
         <div class='header-main container'>
             <div>
@@ -95,11 +97,59 @@
                     </li>
                     <li><a href='#'>Demos</a></li>
                     <li><a href='#'>About us</a></li>
-                    <li><a href='#' class="sign-up">Sign up</a></li>
+                    <li><a href='#myModal' data-toggle="modal" class="sign-up">Sign up</a></li>
                     <li><a href='#' class="login">Login</a></li>
-
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content credentials-main-block" id="credentials-main-block">
+                                <div class="modal-body">
+                                    <div>
+                                        <div class="credentials-block-inner signup-block">
+                                            <h4 class="text-center title-block">Create your account</h4>
+                                            <form action="#">
+                                                <label>Email</label>
+                                                <input type="text" id="name" name='usermail'>
+                                                <label>Phone</label>
+                                                <input type="number" id="name" name='usermail'>
+                                                <label>Password</label>
+                                                <input type="password" id="name" name='usermail'>
+                                                <button class="global-btn cred-btn" type="submit">Register</button>
+                                            </form>
+                                        </div>
+                                        <div class="credentials-block-inner signin-block">
+                                            <h3 class="title-credentials title-block">Login here</h3>
+                                            <form action="#">
+                                                <label>Email or phone</label>
+                                                <input type="text" id="name" name='usermail'>
+                                                <label>Password</label>
+                                                <input type="password" id="name" name='usermail'>
+                                                <button class="global-btn cred-btn" type="submit">Login</button>
+                                            </form>
+                                        </div>
+                                        <div class="left-cred-block">
+                                            <div class="left-cred-overlay">
+                                                <div class="left-cred-inner overlay-left">
+                                                    <img src="./img/Logo.png" />
+                                                   <div class="already-ac">
+                                                    <p>Already have a account? login here</p>
+                                                    <button class="global-btn swipe-btn" id="signIn">Sign In</button>
+                                                   </div>
+                                                </div>
+                                                <div class="left-cred-inner overlay-right">
+                                                    <h1 class="mb-5">Welcome back..!</h1>
+                                                    <p>No account yet? Create now</p>
+                                                    <button class="global-btn swipe-btn" id="signUp">Sign Up</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
-
             </div>
         </div>
     </nav>
@@ -123,7 +173,7 @@
                                 <h4>Top courses</h4>
                                 <img src="./img/top-three.png" />
                                 <div class="explore-links">
-                                    <a class="global-btn" href="">Explore</a>
+                                    <a class="global-btn" href="./topcourses.html">Explore</a>
                                 </div>
                             </div>
                         </div>
@@ -433,7 +483,7 @@
                                 <img src="./img/live-chat.png" />
                             </div>
                             <div class="count-number" data-count="300"></div>
-                            <div  class="about-title">live students</div>
+                            <div class="about-title">live students</div>
                         </div>
 
                         <div class="col-md-4">
@@ -441,7 +491,7 @@
                                 <img src="./img/rating (1).png" />
                             </div>
                             <div class="count-number">4.6</div>
-                            <div  class="about-title">Overall rating</div>
+                            <div class="about-title">Overall rating</div>
                         </div>
                     </div>
                 </div>
