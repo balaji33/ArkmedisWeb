@@ -86,7 +86,7 @@ a:hover {
 .header {
   padding: 0px;
   transition: all 0.4s ease 0s;
-  height: 100px;
+  height: 80px;
   align-items: center;
   z-index: 22 !important;
 }
@@ -96,6 +96,7 @@ a:hover {
   top: 0;
   right: 0;
   left: 0;
+  background: #dae9ff80;
 }
 
 .nav-fixed {
@@ -108,7 +109,7 @@ a:hover {
 
 .logo img {
   height: auto;
-  width: 200px;
+  width: 180px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -118,90 +119,156 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.logo {
-  float: left;
-  width: 40%;
-}
-
-.header-main {
-  display: block;
-  position: relative;
-}
-
 .header .container {
   max-width: 1220px !important;
 }
 
-.header-main:before,
-.header-main:after {
-  display: table;
-  line-height: 0;
-  content: "";
+.headerMain .nav-block {
+  min-height: 80px;
+  background: transparent;
 }
 
-.header-menus li {
-  list-style: none;
-  display: inline-block;
-  cursor: pointer;
-}
-.header-menus li a {
-  display: inline-block;
-  padding: 22px 20px;
+.headerMain .logo {
+  line-height: 80px;
   color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  font-family: "RalewaySemiBold";
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  float: left;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-.header-menus li a:hover {
-  background: #83a926;
-  text-decoration: none;
+.headerMain .menu-list {
+  float: right;
+  margin-top: 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  z-index: 999;
 }
 
-.dropdown {
-  position: absolute;
-  width: 230px;
-  background: #fff;
-  text-align: left;
-  display: none;
-  padding: 0;
-  box-shadow: 0 0 20px rgb(0 0 0 / 14%);
-  z-index: 120;
+.headerMain .menu-list li {
+  padding-left: 20px;
+  padding-right: 20px;
 }
-.dropdown li {
+
+.headerMain .menu-list li:last-child {
+  padding-right: 0px;
+}
+
+.headerMain .menu-list li a {
   display: block;
+  font-weight: 500;
+  font-size: 13px;
+  color: #f7cd36 !important;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  height: 60px;
+  line-height: 40px;
+  border: transparent;
+  letter-spacing: 1px;
 }
-.dropdown li a {
-  display: block;
-  font-weight: 100;
-  color: #05266b;
+
+.headerMain .nav-block .menu-list li:hover a {
+  color: #f55858;
 }
-li.drop-icon:before {
+
+.headerMain .menu-list li.submenu {
+  position: relative;
+  padding-right: 35px;
+}
+
+.headerMain .menu-list li.submenu:after {
   content: url(../img/down-arrow.png);
   position: absolute;
   margin-left: 85px;
-  top: 24px;
+  top: 10px;
+  right: 15px;
 }
-.sub-dropdown {
+
+.headerMain.background-header .nav-block .menu-list li.submenu:after {
+  color: #000;
+}
+
+.headerMain .menu-list li.submenu ul {
   position: absolute;
-  width: 230px;
+  width: 200px;
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 22%);
+  overflow: hidden;
+  top: 60px;
+  opacity: 0;
+  transform: translateY(-2em);
+  visibility: hidden;
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+    z-index 0s linear 0.01s;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.headerMain .menu-list li.submenu ul li {
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.headerMain .menu-list li.submenu ul li a {
+  display: block;
   background: #fff;
-  box-shadow: 0 0 20px rgb(0 0 0 / 14%);
-  text-align: left;
-  display: none;
-  right: -100%;
-  top: 0;
-}
-.sub-dropdown li {
-  display: block;
+  color: #759d1d !important;
+  padding-left: 20px;
+  text-transform: capitalize;
+  line-height: 60px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  font-size: 15px;
+  border-bottom: 1px solid #f1e6e6;
 }
 
-.sub-dropdown li a {
-  display: block;
+.headerMain .menu-list li.submenu ul li a:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  border-radius: 50px;
+  bottom: 0px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: #2367a3;
 }
 
-.header-links-change li a {
-  color: #31569a;
+.headerMain .menu-list li.submenu ul li a:hover {
+  background: #fff;
+  color: #2367a3 !important;
+  padding-left: 25px;
+}
+
+.headerMain .menu-list li.submenu ul li a:hover:before {
+  width: 3px;
+}
+
+.headerMain .menu-list li.submenu:hover ul {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
 }
 
 .hamburger-menu {
@@ -214,16 +281,14 @@ li.drop-icon:before {
 .sign-up {
   border: 1px solid #4b7de7;
   border-radius: 50px;
-  padding: 6px 15px !important;
 }
 
 .login {
-  padding: 6px 15px !important;
-  background: #6d97d3;
-  border: 1px solid #6d97d3;
+  border: 2px solid #92c227 !important;
   border-radius: 50px;
+  padding: 0px 12px;
   color: #fff !important;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+  height: 40px !important;
 }
 
 /*----------------------------------------Header-end---------------------------------*/
@@ -437,7 +502,7 @@ li.drop-icon:before {
   box-shadow: 0 0 10px rgb(0 0 0 / 14%);
   background: #fff;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .live-inner-main {
@@ -466,26 +531,31 @@ li.drop-icon:before {
 }
 
 .register-live {
-  background: #7474bf; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #348ac7,
-    #7474bf
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #348ac7,
-    #7474bf
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background:#eee;
   text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .register-live a {
-  color: #fff;
-  padding: 8px 0px;
+  color: #06266c;
+  padding: 10px 0px !important;
   width: 100%;
+  display: block;
+  font-size: 14px;
+  width: 100%;
+}
+
+.register-live a:after {
+  content: url(../img/enter1.png);
+    position: absolute;
+    margin-left: 4px;
+    margin-top: -1px;
+    transition: all 0.3s ease 0s;
+}
+
+.register-live:hover a:after {
+  padding-left: 10px;
 }
 
 .live-time {
@@ -498,6 +568,13 @@ li.drop-icon:before {
   padding: 5px 11px;
   border-radius: 5px;
   text-transform: uppercase;
+}
+
+.live-classes-inner {
+  background: #00d2ff;
+  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+  padding: 80px 0;
 }
 
 /*------------------------demo-block-------------------------*/
@@ -765,9 +842,17 @@ label {
 }
 
 .left-cred-overlay {
-  background: #00b09b;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00b09b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #96c93d,
+    #00b09b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #96c93d,
+    #00b09b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   position: relative;
   left: -100%;
@@ -857,12 +942,11 @@ label {
   top: 85px;
 }
 
-
 /*--------------------------back-to-top--------------*/
 
 #button {
   display: inline-block;
-  background-color: #FF9800;
+  background-color: #ff9800;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -870,8 +954,7 @@ label {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -896,7 +979,6 @@ label {
   opacity: 1;
   visibility: visible;
 }
-
 
 /*-------------------------footer--------------------*/
 .footer {

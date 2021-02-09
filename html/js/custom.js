@@ -231,3 +231,14 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
+
+
+
+
+  // Mobile menu dropdown
+  $(".submenu").on("click", function() {
+    var width = $(window).width();
+    if (width < 992) {
+      $(".submenu ul").toggleClass("active");
+    }
+  });

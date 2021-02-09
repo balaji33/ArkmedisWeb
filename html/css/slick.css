@@ -137,30 +137,26 @@
     color: #ffffff !important;
 }
 
-.slick-prev:before {
+.slick-prev:before,
+.slick-next:before {
     content: "\f053" !important;
     font-family: "FontAwesome" !important;
     opacity: 1 !important;
-    color: #06266c !important;
+    color: #fff !important;
     font-size: 14px;
 }
 
 .slick-next:before {
     content: "\f054" !important;
-    color:#06266c !important;
-    font-family: "FontAwesome" !important;
-    opacity: 1 !important;
-    font-size: 14px;
 }
 
 .slick-next,
 .slick-prev {
-    height: 45px !important;
+    height: 50px !important;
     border-radius: 75% !important;
-    background-color: #ffffff29 !important;
-    width: 45px !important;
+    background-color: #26a2e5 !important;
+    width: 50px !important;
     z-index: 1 !important;
-    box-shadow: 0 0 20px rgb(0 0 0 / 14%);
 }
 
 .slick-next:hover,

@@ -28,42 +28,96 @@
     <body>
         <!-- Back to top button -->
         <a id="button"></a>
-        <nav class="header-menu header other-pages" id="header">
-            <div class="header-main container">
-                <div>
-                    <span class="hamburger-menu">
-                        <span class="bar-1"></span>
-                        <span class="bar-2"></span>
-                        <span class="bar-3"></span>
-                    </span>
-                    <div class="logo">
-                        <figure>
-                            <img src="./img/Logo.png" />
-                        </figure>
-                    </div>
-                    <ul class="header-menus" id="header-menus">
-                        <li class="drop-icon">
-                            <a href="#">Courses</a>
-                            <ul class="dropdown">
-                                <li><a href="#">5th Class</a></li>
-                                <li><a href="#">6th Class</a></li>
-                                <li><a href="#">7th Class</a></li>
-                                <li><a href="#">8th Class</a></li>
-                                <li><a href="#">9th Class</a></li>
-                                <li><a href="#">10th Class</a></li>
+        <!-- ***** Header Area Start ***** -->
+        <header class="headerMain header-menu header" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="nav-block">
+                            <span class="hamburger-menu">
+                                <span class="bar-1"></span>
+                                <span class="bar-2"></span>
+                                <span class="bar-3"></span>
+                            </span>
+                            <a href="#" class="logo">
+                                <figure>
+                                    <img src="./img/Logo.png" />
+                                </figure>
+                            </a>
+                            <ul class="menu-list header-menus" id="header-menus">
+                                <li class="submenu">
+                                    <a href="javascript:;">Courses</a>
+                                    <ul>
+                                        <li><a href="./courses.html">5th Class</a></li>
+                                        <li><a href="">6th Class</a></li>
+                                        <li><a href="">7h Class</a></li>
+                                        <li><a href="">8th Class</a></li>
+                                        <li><a href="">9th Class</a></li>
+                                        <li><a href="">10th Class</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#about">Demos</a></li>
+                                <li><a href="#services">About us</a></li>
+                                <li><a href="#myModal" data-toggle="modal" class="sign-up">Sign up</a></li>
+                                <li><a href="#myModal" data-toggle="modal" class="login">Login</a></li>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content credentials-main-block" id="credentials-main-block">
+                                            <div class="modal-body">
+                                                <div>
+                                                    <div class="credentials-block-inner signup-block">
+                                                        <h4 class="text-center title-block">Create your account</h4>
+                                                        <form action="#">
+                                                            <label>Email</label>
+                                                            <input type="text" id="name" name="usermail" />
+                                                            <label>Phone</label>
+                                                            <input type="number" id="name" name="usermail" />
+                                                            <label>Password</label>
+                                                            <input type="password" id="name" name="usermail" />
+                                                            <button class="global-btn cred-btn" type="submit">Register</button>
+                                                        </form>
+                                                    </div>
+                                                    <div class="credentials-block-inner signin-block">
+                                                        <h3 class="title-credentials title-block">Login here</h3>
+                                                        <form action="#">
+                                                            <label>Email or phone</label>
+                                                            <input type="text" id="name" name="usermail" />
+                                                            <label>Password</label>
+                                                            <input type="password" id="name" name="usermail" />
+                                                            <button class="global-btn cred-btn" type="submit">Login</button>
+                                                        </form>
+                                                    </div>
+                                                    <div class="left-cred-block">
+                                                        <div class="left-cred-overlay">
+                                                            <div class="left-cred-inner overlay-left">
+                                                                <img src="./img/Logo.png" />
+                                                                <div class="already-ac">
+                                                                    <p>Already have a account? login here</p>
+                                                                    <button class="global-btn swipe-btn" id="signIn">Sign In</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="left-cred-inner overlay-right">
+                                                                <h1 class="mb-5">Welcome back..!</h1>
+                                                                <p>No account yet? Create now</p>
+                                                                <button class="global-btn swipe-btn" id="signUp">Sign Up</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </ul>
-                        </li>
-                        <li><a href="#">Live classes</a></li>
-                        <li><a href="#">Demos</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#" class="sign-up">Sign up</a></li>
-                        <li><a href="#" class="login">Login</a></li>
-                    </ul>
+                            <!-- ***** Menu End ***** -->
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </nav>
-
-
+        </header>
+        <!-- ***** Header Area End ***** -->
 
         <div class="footer">
             <div class="container">

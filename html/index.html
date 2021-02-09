@@ -1,584 +1,548 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Required meta tags start -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Required meta tags end -->
+        <meta name="description" content=" " />
+        <meta name="author" content="ConneXions" />
+        <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png" />
+        <title>Arkmedis</title>
+        <!-- -----------Bootstrap CSS---------->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <!----------Common CSS--------------->
+        <link rel="stylesheet" type="text/css" href="css/common.css" />
+        <!---------------Responsive CSS-------->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+        <!--font-awesome-->
+        <script src="https://kit.fontawesome.com/87537384a1.js" crossorigin="anonymous"></script>
+        <!-------slick CSS Start----->
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/slick.css" />
+        <!-------slick CSS End------>
+    </head>
 
-<head>
-    <!-- Required meta tags start -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Required meta tags end -->
-    <meta name="description" content=" ">
-    <meta name="author" content="ConneXions">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
-    <title>Arkmedis</title>
-    <!-- -----------Bootstrap CSS---------->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <!----------Common CSS--------------->
-    <link rel="stylesheet" type="text/css" href="css/common.css" />
-    <!---------------Responsive CSS-------->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <!--font-awesome-->
-    <script src="https://kit.fontawesome.com/87537384a1.js" crossorigin="anonymous"></script>
-    <!-------slick CSS Start----->
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <!-------slick CSS End------>
-</head>
+    <body>
+        <!-- Back to top button -->
+        <a id="button"></a>
+        <!-- ***** Header Area Start ***** -->
+        <header class="headerMain header-menu header" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="nav-block">
+                            <span class="hamburger-menu">
+                                <span class="bar-1"></span>
+                                <span class="bar-2"></span>
+                                <span class="bar-3"></span>
+                            </span>
+                            <a href="#" class="logo">
+                                <figure>
+                                    <img src="./img/Logo.png" />
+                                </figure>
+                            </a>
+                            <ul class="menu-list header-menus" id="header-menus">
+                                <li class="submenu">
+                                    <a href="javascript:;">Courses</a>
+                                    <ul>
+                                        <li><a href="./courses.html">5th Class</a></li>
+                                        <li><a href="">6th Class</a></li>
+                                        <li><a href="">7h Class</a></li>
+                                        <li><a href="">8th Class</a></li>
+                                        <li><a href="">9th Class</a></li>
+                                        <li><a href="">10th Class</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#about">Demos</a></li>
+                                <li><a href="#services">About us</a></li>
+                                <li><a href="#myModal" data-toggle="modal" class="sign-up">Sign up</a></li>
+                                <li><a href="#myModal" data-toggle="modal" class="login">Login</a></li>
 
-<body>
-     <!-- Back to top button -->
-     <a id="button"></a>
-    <nav class="header-menu header" id="header">
-        <div class='header-main container'>
-            <div>
-                <span class='hamburger-menu'>
-                    <span class='bar-1'></span>
-                    <span class='bar-2'></span>
-                    <span class='bar-3'></span>
-                </span>
-                <div class="logo">
-                    <figure>
-                        <img src="./img/Logo.png" />
-                    </figure>
-                </div>
-                <ul class='header-menus' id="header-menus">
-                    <li class="drop-icon"><a href='#'>Courses</a>
-                        <ul class='dropdown'>
-                            <li><a href='./courses.html'>5th Class</a></a>
-                                <!-- <ul class='sub-dropdown'>
-                                    <li><a href='#'>Maths</a></li>
-                                    <li><a href='#'>Science</a></li>
-                                    <li><a href='#'>English</a></li>
-                                </ul> -->
-                            </li>
-                            <li><a href='./6courses.html'>6th Class</a>
-                                <!-- <ul class='sub-dropdown'>
-                                    <li><a href='#'>Maths</a></li>
-                                    <li><a href='#'>Science</a></li>
-                                    <li><a href='#'>English</a></li>
-                                </ul> -->
-                            </li>
-                            <li><a href='#'>7th Class</a>
-                                <!-- <ul class='sub-dropdown'>
-                                    <li><a href='#'>Maths</a></li>
-                                    <li><a href='#'>Science</a></li>
-                                    <li><a href='#'>English</a></li>
-                                </ul> -->
-                            </li>
-                            <li><a href='#'>8th Class</a>
-                                <!-- <ul class='sub-dropdown'>
-                                    <li><a href='#'>Maths</a></li>
-                                    <li><a href='#'>Science</a></li>
-                                    <li><a href='#'>English</a></li>
-                                </ul> -->
-                            </li>
-                            <li><a href='#'>9th Class</a>
-                                <!-- <ul class='sub-dropdown'>
-                                    <li><a href='#'>Maths</a></li>
-                                    <li><a href='#'>Science</a></li>
-                                    <li><a href='#'>English</a></li>
-                                </ul> -->
-                            </li>
-                            <li><a href='#'>10th Class</a>
-                                <!-- <ul class='sub-dropdown'>
-                                    <li><a href='#'>Maths</a></li>
-                                    <li><a href='#'>Science</a></li>
-                                    <li><a href='#'>English</a></li>
-                                </ul> -->
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href='#'>Live classes</a>
-                        <!-- <ul class='dropdown'>
-                            <li><a href='#'>Cortana</a></li>
-                            <li><a href='#'>Xboct</a></li>
-                            <li><a href='#'>Microsoft Edge</a></li>
-                        </ul> -->
-                    </li>
-                    <li><a href='#'>Demos</a></li>
-                    <li><a href='#'>About us</a></li>
-                    <li><a href='#myModal' data-toggle="modal" class="sign-up">Sign up</a></li>
-                    <li><a href='#' class="login">Login</a></li>
-                    <!-- Modal -->
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content credentials-main-block" id="credentials-main-block">
-                                <div class="modal-body">
-                                    <div>
-                                        <div class="credentials-block-inner signup-block">
-                                            <h4 class="text-center title-block">Create your account</h4>
-                                            <form action="#">
-                                                <label>Email</label>
-                                                <input type="text" id="name" name='usermail'>
-                                                <label>Phone</label>
-                                                <input type="number" id="name" name='usermail'>
-                                                <label>Password</label>
-                                                <input type="password" id="name" name='usermail'>
-                                                <button class="global-btn cred-btn" type="submit">Register</button>
-                                            </form>
-                                        </div>
-                                        <div class="credentials-block-inner signin-block">
-                                            <h3 class="title-credentials title-block">Login here</h3>
-                                            <form action="#">
-                                                <label>Email or phone</label>
-                                                <input type="text" id="name" name='usermail'>
-                                                <label>Password</label>
-                                                <input type="password" id="name" name='usermail'>
-                                                <button class="global-btn cred-btn" type="submit">Login</button>
-                                            </form>
-                                        </div>
-                                        <div class="left-cred-block">
-                                            <div class="left-cred-overlay">
-                                                <div class="left-cred-inner overlay-left">
-                                                    <img src="./img/Logo.png" />
-                                                   <div class="already-ac">
-                                                    <p>Already have a account? login here</p>
-                                                    <button class="global-btn swipe-btn" id="signIn">Sign In</button>
-                                                   </div>
-                                                </div>
-                                                <div class="left-cred-inner overlay-right">
-                                                    <h1 class="mb-5">Welcome back..!</h1>
-                                                    <p>No account yet? Create now</p>
-                                                    <button class="global-btn swipe-btn" id="signUp">Sign Up</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content credentials-main-block" id="credentials-main-block">
+                                            <div class="modal-body">
+                                                <div>
+                                                    <div class="credentials-block-inner signup-block">
+                                                        <h4 class="text-center title-block">Create your account</h4>
+                                                        <form action="#">
+                                                            <label>Email</label>
+                                                            <input type="text" id="name" name="usermail" />
+                                                            <label>Phone</label>
+                                                            <input type="number" id="name" name="usermail" />
+                                                            <label>Password</label>
+                                                            <input type="password" id="name" name="usermail" />
+                                                            <button class="global-btn cred-btn" type="submit">Register</button>
+                                                        </form>
+                                                    </div>
+                                                    <div class="credentials-block-inner signin-block">
+                                                        <h3 class="title-credentials title-block">Login here</h3>
+                                                        <form action="#">
+                                                            <label>Email or phone</label>
+                                                            <input type="text" id="name" name="usermail" />
+                                                            <label>Password</label>
+                                                            <input type="password" id="name" name="usermail" />
+                                                            <button class="global-btn cred-btn" type="submit">Login</button>
+                                                        </form>
+                                                    </div>
+                                                    <div class="left-cred-block">
+                                                        <div class="left-cred-overlay">
+                                                            <div class="left-cred-inner overlay-left">
+                                                                <img src="./img/Logo.png" />
+                                                                <div class="already-ac">
+                                                                    <p>Already have a account? login here</p>
+                                                                    <button class="global-btn swipe-btn" id="signIn">Sign In</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="left-cred-inner overlay-right">
+                                                                <h1 class="mb-5">Welcome back..!</h1>
+                                                                <p>No account yet? Create now</p>
+                                                                <button class="global-btn swipe-btn" id="signUp">Sign Up</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!------------------------------homebanner------------------------------->
-    <div class="home-banner">
-        <img src="./img/Target.jpg" />
-    </div>
-
-    <!------------------------------end homebanner------------------------------->
-
-    <!------------------------------banner-explore-blocks------------------------>
-
-    <div class="banner-explore-blocks margin-block">
-        <h2 class="text-center mb-5 title-block">Choose categories</h2>
-        <div class="banner-explore-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="info-blocks">
-                            <div class="info-inner">
-                                <h4>Top courses</h4>
-                                <img src="./img/top-three.png" />
-                                <div class="explore-links">
-                                    <a class="global-btn" href="./topcourses.html">Explore</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="info-blocks">
-                            <div class="info-inner">
-                                <h4>New courses</h4>
-                                <img src="./img/online-class.png" />
-                                <div class="explore-links">
-                                    <a class="global-btn" href="./newcourses.html">Explore</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="info-blocks">
-                            <div class="info-inner">
-                                <h4>Free Classes</h4>
-                                <img src="./img/computer.png" />
-                                <div class="explore-links">
-                                    <a class="global-btn" href="./freecourses.html">Explore</a>
-                                </div>
-                            </div>
-                        </div>
+                            </ul>
+                            <!-- ***** Menu End ***** -->
+                        </nav>
                     </div>
                 </div>
             </div>
+        </header>
+        <!-- ***** Header Area End ***** -->
+
+        <!------------------------------homebanner------------------------------->
+        <div class="home-banner">
+            <img src="./img/Target.jpg" />
         </div>
-    </div>
-    <!----------------------------end-banner-explore-blocks------------------------>
 
-    <!----------------------------Choose standards------------------------>
+        <!------------------------------end homebanner------------------------------->
 
-    <div class="categories-main margin-block">
-        <h2 class="text-center mb-4 title-block">Choose standards</h2>
-        <div class="categories-slider">
-            <div class="categories-slider-inner">
+        <!------------------------------banner-explore-blocks------------------------>
+
+        <div class="banner-explore-blocks margin-block">
+            <h2 class="text-center mb-5 title-block">Choose categories</h2>
+            <div class="banner-explore-inner">
                 <div class="container">
-                    <div class="slider">
-                        <div class="category-block">
-                            <div class="category-block-inner blk-5">
-                                <a href="./courses.html">
-                                    <div class="category-content">
-                                        <figure>
-                                            <img src="./img/open-book.png" />
-                                        </figure>
-                                        <h4>5th Class</h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="category-block">
-                            <div class="category-block-inner blk-6">
-                                <div class="category-content">
-                                    <figure>
-                                        <img src="./img/books-1.png" />
-                                    </figure>
-                                    <h4>6th Class</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="category-block">
-                            <div class="category-block-inner blk-7">
-                                <div class="category-content">
-                                    <figure>
-                                        <img src="./img/school-material.png" />
-                                    </figure>
-                                    <h4>7th Class</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="category-block">
-                            <div class="category-block-inner blk-8">
-                                <div class="category-content">
-                                    <figure>
-                                        <img src="./img/mortarboard.png" />
-                                    </figure>
-                                    <h4>8th Class</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="category-block">
-                            <div class="category-block-inner blk-9">
-                                <div class="category-content">
-                                    <figure>
-                                        <img src="./img/books.png" />
-                                    </figure>
-                                    <h4>9th Class</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="category-block">
-                            <div class="category-block-inner blk-10">
-                                <div class="category-content">
-                                    <figure>
-                                        <img src="./img/book.png" />
-                                    </figure>
-                                    <h4>10th Class</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!----------------------------end-Choose-standards------------------------>
-
-    <!----------------------------Live-classes------------------------>
-
-    <div class="live-classes-block margin-block">
-        <h2 class="text-center mb-5 title-block">Live classes</h2>
-        <div class="live-classes-inner">
-            <div class="container">
-                <div class="live-classes-slider">
-                    <div class="live-slider-content">
-                        <div class="live-content-inner">
-                            <div class="live-inner-main">
-                                <a class="live-link" href="">10th class maths</a>
-                                <div class="instrucor-image">
-                                    <img src="./img/user-original.png" />
-                                </div>
-                                <div class="instructor-details">
-                                    <div>Instructor</div>
-                                    <div>Ravi anantha</div>
-                                </div>
-                                <div class="instructor-expert">
-                                    <span>Maths Expert</span>
-                                    <span>Mca jntu university</span>
-                                </div>
-                                <div class="live-time">
-                                    <div>Mon 1 feb, 11 AM</div>
-                                </div>
-                            </div>
-                            <div class="register-live">
-                                <a class="global-btn" href="">Register here</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="live-slider-content">
-                        <div class="live-content-inner">
-                            <div class="live-inner-main">
-                                <a class="live-link" href="">10th class maths</a>
-                                <div class="instrucor-image">
-                                    <img src="./img/user-original.png" />
-                                </div>
-                                <div class="instructor-details">
-                                    <div>Instructor</div>
-                                    <div>Ravi anantha</div>
-                                </div>
-                                <div class="instructor-expert">
-                                    <span>Maths Expert</span>
-                                    <span>Mca jntu university</span>
-                                </div>
-                                <div class="live-time">
-                                    <div>Mon 1 feb, 11 AM</div>
-                                </div>
-                            </div>
-                            <div class="register-live">
-                                <a class="global-btn" href="">Register here</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="live-slider-content">
-                        <div class="live-content-inner">
-                            <div class="live-inner-main">
-                                <a class="live-link" href="">10th class maths</a>
-                                <div class="instrucor-image">
-                                    <img src="./img/user-original.png" />
-                                </div>
-                                <div class="instructor-details">
-                                    <div>Instructor</div>
-                                    <div>Ravi anantha</div>
-                                </div>
-                                <div class="instructor-expert">
-                                    <span>Maths Expert</span>
-                                    <span>Mca jntu university</span>
-                                </div>
-                                <div class="live-time">
-                                    <div>Mon 1 feb, 11 AM</div>
-                                </div>
-                            </div>
-                            <div class="register-live">
-                                <a class="global-btn" href="">Register here</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="live-slider-content">
-                        <div class="live-content-inner">
-                            <div class="live-inner-main">
-                                <a class="live-link" href="">10th class maths</a>
-                                <div class="instrucor-image">
-                                    <img src="./img/user-original.png" />
-                                </div>
-                                <div class="instructor-details">
-                                    <div>Instructor</div>
-                                    <div>Ravi anantha</div>
-                                </div>
-                                <div class="instructor-expert">
-                                    <span>Maths Expert</span>
-                                    <span>Mca jntu university</span>
-                                </div>
-                                <div class="live-time">
-                                    <div>Mon 1 feb, 11 AM</div>
-                                </div>
-                            </div>
-                            <div class="register-live">
-                                <a class="global-btn" href="">Register here</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="live-slider-content">
-                        <div class="live-content-inner">
-                            <div class="live-inner-main">
-                                <a class="live-link" href="">10th class maths</a>
-                                <div class="instrucor-image">
-                                    <img src="./img/user-original.png" />
-                                </div>
-                                <div class="instructor-details">
-                                    <div>Instructor</div>
-                                    <div>Ravi anantha</div>
-                                </div>
-                                <div class="instructor-expert">
-                                    <span>Maths Expert</span>
-                                    <span>Mca jntu university</span>
-                                </div>
-                                <div class="live-time">
-                                    <div>Mon 1 feb, 11 AM</div>
-                                </div>
-                            </div>
-                            <div class="register-live">
-                                <a class="global-btn" href="">Register here</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!----------------------------end-Live-classes------------------------>
-
-    <!----------------------------Our-demos------------------------>
-
-    <div class="container">
-        <h2 class="text-center mb-5 mt-5 title-block">Our demos</h2>
-        <div class="video-demo-block">
-            <div class="video-demo-img">
-                <img src="./img/video-banner.png" />
-            </div>
-            <div class="demo-video-btn" data-toggle="modal" data-src="https://player.vimeo.com/video/506939861"
-                data-target="#videomodal">
-                <a class="play-btn" href="#"></a>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="videomodal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <!-- 16:9 aspect ratio -->
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="" id="video"
-                                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!----------------------------end-Our-demos------------------------>
-
-    <!----------------------------why-learn-block------------------------>
-
-    <div class="why-learn-block margin-block ">
-        <div class="why-learn-inner">
-            <h2 class="text-center mb-5 mt-5 title-block">Why learn on Arkmedis</h2>
-            <div class="container">
-                <p>Learning is supposed to be fun and exciting.At Arkmedis it is our endeavour to make learning as
-                    entertaining as watching a movie and as exciting as playing a game.</p>
-                <div class="about-arkmedis" id="about-counting">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="about-ark-icon">
-                                <img src="./img/student.png" />
+                            <div class="info-blocks">
+                                <div class="info-inner">
+                                    <h4>Top courses</h4>
+                                    <img src="./img/top-three.png" />
+                                    <div class="explore-links">
+                                        <a class="global-btn" href="./topcourses.html">Explore</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="count-number" data-count="300"></div>
-                            <div class="about-title">Students</div>
                         </div>
-
                         <div class="col-md-4">
-                            <div class="about-ark-icon">
-                                <img src="./img/live-chat.png" />
+                            <div class="info-blocks">
+                                <div class="info-inner">
+                                    <h4>New courses</h4>
+                                    <img src="./img/online-class.png" />
+                                    <div class="explore-links">
+                                        <a class="global-btn" href="./newcourses.html">Explore</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="count-number" data-count="300"></div>
-                            <div class="about-title">live students</div>
                         </div>
-
                         <div class="col-md-4">
-                            <div class="about-ark-icon">
-                                <img src="./img/rating (1).png" />
+                            <div class="info-blocks">
+                                <div class="info-inner">
+                                    <h4>Free Classes</h4>
+                                    <img src="./img/computer.png" />
+                                    <div class="explore-links">
+                                        <a class="global-btn" href="./freecourses.html">Explore</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="count-number">4.6</div>
-                            <div class="about-title">Overall rating</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!----------------------------end-why-learn-block------------------------>
+        <!----------------------------end-banner-explore-blocks------------------------>
 
-    <!----------------------------footer------------------------>
+        <!----------------------------Choose standards------------------------>
 
-    <div class="footer">
+        <div class="categories-main margin-block">
+            <h2 class="text-center mb-4 title-block">Choose standards</h2>
+            <div class="categories-slider">
+                <div class="categories-slider-inner">
+                    <div class="container">
+                        <div class="slider">
+                            <div class="category-block">
+                                <div class="category-block-inner blk-5">
+                                    <a href="./courses.html">
+                                        <div class="category-content">
+                                            <figure>
+                                                <img src="./img/open-book.png" />
+                                            </figure>
+                                            <h4>5th Class</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="category-block">
+                                <div class="category-block-inner blk-6">
+                                    <div class="category-content">
+                                        <figure>
+                                            <img src="./img/books-1.png" />
+                                        </figure>
+                                        <h4>6th Class</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="category-block">
+                                <div class="category-block-inner blk-7">
+                                    <div class="category-content">
+                                        <figure>
+                                            <img src="./img/school-material.png" />
+                                        </figure>
+                                        <h4>7th Class</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="category-block">
+                                <div class="category-block-inner blk-8">
+                                    <div class="category-content">
+                                        <figure>
+                                            <img src="./img/mortarboard.png" />
+                                        </figure>
+                                        <h4>8th Class</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="category-block">
+                                <div class="category-block-inner blk-9">
+                                    <div class="category-content">
+                                        <figure>
+                                            <img src="./img/books.png" />
+                                        </figure>
+                                        <h4>9th Class</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="category-block">
+                                <div class="category-block-inner blk-10">
+                                    <div class="category-content">
+                                        <figure>
+                                            <img src="./img/book.png" />
+                                        </figure>
+                                        <h4>10th Class</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------end-Choose-standards------------------------>
+
+        <!----------------------------Live-classes------------------------>
+
+        <div class="live-classes-block margin-block">
+            <h2 class="text-center mb-5 title-block">Live classes</h2>
+            <div class="live-classes-inner">
+                <div class="container">
+                    <div class="live-classes-slider">
+                        <div class="live-slider-content">
+                            <div class="live-content-inner">
+                                <div class="live-inner-main">
+                                    <a class="live-link" href="">10th class maths</a>
+                                    <div class="instrucor-image">
+                                        <img src="./img/user-original.png" />
+                                    </div>
+                                    <div class="instructor-details">
+                                        <div>Instructor</div>
+                                        <div>Ravi anantha</div>
+                                    </div>
+                                    <div class="instructor-expert">
+                                        <span>Maths Expert</span>
+                                        <span>Mca jntu university</span>
+                                    </div>
+                                    <div class="live-time">
+                                        <div>Mon 1 feb, 11 AM</div>
+                                    </div>
+                                </div>
+                                <div class="register-live">
+                                    <a class="" href="">Register here</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="live-slider-content">
+                            <div class="live-content-inner">
+                                <div class="live-inner-main">
+                                    <a class="live-link" href="">10th class maths</a>
+                                    <div class="instrucor-image">
+                                        <img src="./img/user-original.png" />
+                                    </div>
+                                    <div class="instructor-details">
+                                        <div>Instructor</div>
+                                        <div>Ravi anantha</div>
+                                    </div>
+                                    <div class="instructor-expert">
+                                        <span>Maths Expert</span>
+                                        <span>Mca jntu university</span>
+                                    </div>
+                                    <div class="live-time">
+                                        <div>Mon 1 feb, 11 AM</div>
+                                    </div>
+                                </div>
+                                <div class="register-live">
+                                    <a class="" href="">Register here</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="live-slider-content">
+                            <div class="live-content-inner">
+                                <div class="live-inner-main">
+                                    <a class="live-link" href="">10th class maths</a>
+                                    <div class="instrucor-image">
+                                        <img src="./img/user-original.png" />
+                                    </div>
+                                    <div class="instructor-details">
+                                        <div>Instructor</div>
+                                        <div>Ravi anantha</div>
+                                    </div>
+                                    <div class="instructor-expert">
+                                        <span>Maths Expert</span>
+                                        <span>Mca jntu university</span>
+                                    </div>
+                                    <div class="live-time">
+                                        <div>Mon 1 feb, 11 AM</div>
+                                    </div>
+                                </div>
+                                <div class="register-live">
+                                    <a class="" href="">Register here</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="live-slider-content">
+                            <div class="live-content-inner">
+                                <div class="live-inner-main">
+                                    <a class="live-link" href="">10th class maths</a>
+                                    <div class="instrucor-image">
+                                        <img src="./img/user-original.png" />
+                                    </div>
+                                    <div class="instructor-details">
+                                        <div>Instructor</div>
+                                        <div>Ravi anantha</div>
+                                    </div>
+                                    <div class="instructor-expert">
+                                        <span>Maths Expert</span>
+                                        <span>Mca jntu university</span>
+                                    </div>
+                                    <div class="live-time">
+                                        <div>Mon 1 feb, 11 AM</div>
+                                    </div>
+                                </div>
+                                <div class="register-live">
+                                    <a class="" href="">Register here</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="live-slider-content">
+                            <div class="live-content-inner">
+                                <div class="live-inner-main">
+                                    <a class="live-link" href="">10th class maths</a>
+                                    <div class="instrucor-image">
+                                        <img src="./img/user-original.png" />
+                                    </div>
+                                    <div class="instructor-details">
+                                        <div>Instructor</div>
+                                        <div>Ravi anantha</div>
+                                    </div>
+                                    <div class="instructor-expert">
+                                        <span>Maths Expert</span>
+                                        <span>Mca jntu university</span>
+                                    </div>
+                                    <div class="live-time">
+                                        <div>Mon 1 feb, 11 AM</div>
+                                    </div>
+                                </div>
+                                <div class="register-live">
+                                    <a class="" href="">Register here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------end-Live-classes------------------------>
+
+        <!----------------------------Our-demos------------------------>
+
         <div class="container">
-            <div class="footer-inner">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h5>About us</h5>
-                        <p>
-                            Arkmedis it is our endeavour to make learning as entertaining as watching a movie and as
-                            exciting as playing a game.
-                        </p>
-                    </div>
-                    <div class="col-md-6 follow-us text-right">
-                        <h5 class="text-right"> Follow us</h5>
-                        <ul>
-                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i class="far fa-envelope"></i></a></li>
-                        </ul>
+            <h2 class="text-center mb-5 mt-5 title-block">Our demos</h2>
+            <div class="video-demo-block">
+                <div class="video-demo-img">
+                    <img src="./img/video-banner.png" />
+                </div>
+                <div class="demo-video-btn" data-toggle="modal" data-src="https://player.vimeo.com/video/506939861" data-target="#videomodal">
+                    <a class="play-btn" href="#"></a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="videomodal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <!-- 16:9 aspect ratio -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="" id="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-md-3">
-                        <h5>Live classes</h5>
-                        <li><a href="">5th maths</a></li>
-                        <li><a href="">5th science</a></li>
-                        <li><a href="">5th english</a></li>
-                        <li><a href="">5th hindi</a></li>
-                    </div>
-
-                    <div class="col-md-3">
-                        <h5>Categories</h5>
-                        <li><a href="">5th class</a></li>
-                        <li><a href="">6th class</a></li>
-                        <li><a href="">7th class</a></li>
-                        <li><a href="">8th class</a></li>
-                        <li><a href="">9th class</a></li>
-                        <li><a href="">10th class</a></li>
-                    </div>
-
-                    <div class="col-md-3">
-                        <h5>Free demos</h5>
-                        <li><a href="">5th class</a></li>
-                        <li><a href="">6th class</a></li>
-                        <li><a href="">7th class</a></li>
-                        <li><a href="">8th class</a></li>
-                        <li><a href="">9th class</a></li>
-                        <li><a href="">10th class</a></li>
-                    </div>
-
-                    <div class="col-md-3">
-                        <h5>Download our app</h5>
-                        <span>
-                            <a href=""><img src="./img/googlePlayStore.svg" /></a>
-                        </span>
-                        <span>
-                            <a href=""><img src="./img/app-store.svg" /></a>
-                        </span>
-                    </div>
-                </div>
-
             </div>
         </div>
-        <div class="footer-arkmedis col-md">
-            <p><a href="#">© 2021 Arkmedis.com</a></p>
+
+        <!----------------------------end-Our-demos------------------------>
+
+        <!----------------------------why-learn-block------------------------>
+
+        <div class="why-learn-block margin-block">
+            <div class="why-learn-inner">
+                <h2 class="text-center mb-5 mt-5 title-block">Why learn on Arkmedis</h2>
+                <div class="container">
+                    <p>Learning is supposed to be fun and exciting.At Arkmedis it is our endeavour to make learning as entertaining as watching a movie and as exciting as playing a game.</p>
+                    <div class="about-arkmedis" id="about-counting">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="about-ark-icon">
+                                    <img src="./img/student.png" />
+                                </div>
+                                <div class="count-number" data-count="300"></div>
+                                <div class="about-title">Students</div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="about-ark-icon">
+                                    <img src="./img/live-chat.png" />
+                                </div>
+                                <div class="count-number" data-count="300"></div>
+                                <div class="about-title">live students</div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="about-ark-icon">
+                                    <img src="./img/rating (1).png" />
+                                </div>
+                                <div class="count-number">4.6</div>
+                                <div class="about-title">Overall rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <!----------------------------end-why-learn-block------------------------>
 
-    <!----------------------------end-footer------------------------>
+        <!----------------------------footer------------------------>
 
+        <div class="footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>About us</h5>
+                            <p>
+                                Arkmedis it is our endeavour to make learning as entertaining as watching a movie and as exciting as playing a game.
+                            </p>
+                        </div>
+                        <div class="col-md-6 follow-us text-right">
+                            <h5 class="text-right">Follow us</h5>
+                            <ul>
+                                <li>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="far fa-envelope"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-3">
+                            <h5>Live classes</h5>
+                            <li><a href="">5th maths</a></li>
+                            <li><a href="">5th science</a></li>
+                            <li><a href="">5th english</a></li>
+                            <li><a href="">5th hindi</a></li>
+                        </div>
 
-    <!-----------Default JS------------>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.js"></script>
-    <!-------------Custom JS----------->
-    <script src="js/custom.js"></script>
-</body>
+                        <div class="col-md-3">
+                            <h5>Categories</h5>
+                            <li><a href="">5th class</a></li>
+                            <li><a href="">6th class</a></li>
+                            <li><a href="">7th class</a></li>
+                            <li><a href="">8th class</a></li>
+                            <li><a href="">9th class</a></li>
+                            <li><a href="">10th class</a></li>
+                        </div>
 
+                        <div class="col-md-3">
+                            <h5>Free demos</h5>
+                            <li><a href="">5th class</a></li>
+                            <li><a href="">6th class</a></li>
+                            <li><a href="">7th class</a></li>
+                            <li><a href="">8th class</a></li>
+                            <li><a href="">9th class</a></li>
+                            <li><a href="">10th class</a></li>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5>Download our app</h5>
+                            <span>
+                                <a href=""><img src="./img/googlePlayStore.svg" /></a>
+                            </span>
+                            <span>
+                                <a href=""><img src="./img/app-store.svg" /></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-arkmedis col-md">
+                <p><a href="#">© 2021 Arkmedis.com</a></p>
+            </div>
+        </div>
+
+        <!----------------------------end-footer------------------------>
+
+        <!-----------Default JS------------>
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.js"></script>
+        <!-------------Custom JS----------->
+        <script src="js/custom.js"></script>
+    </body>
 </html>
