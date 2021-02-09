@@ -146,6 +146,15 @@
     font-size: 14px;
 }
 
+.categories-main  .slick-next, 
+.categories-main .slick-prev {
+    height: 50px !important;
+    border-radius: 75% !important;
+    background-color: #8ea8cc !important;
+    width: 50px !important;
+    z-index: 1 !important;
+}
+
 .slick-next:before {
     content: "\f054" !important;
 }

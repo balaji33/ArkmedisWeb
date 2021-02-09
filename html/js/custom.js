@@ -47,7 +47,7 @@ jQuery(document).ready(function ($) {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
@@ -242,3 +242,5 @@ btn.on('click', function(e) {
       $(".submenu ul").toggleClass("active");
     }
   });
+
+  
