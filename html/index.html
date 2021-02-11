@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <!----------Common CSS--------------->
         <link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/coursecard_sliders.css" />
         <!---------------Responsive CSS-------->
         <link rel="stylesheet" type="text/css" href="css/responsive.css" />
         <!--font-awesome-->
@@ -21,6 +22,7 @@
         <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
         <link rel="stylesheet" type="text/css" href="css/slick.css" />
         <!-------slick CSS End------>
+        <script src="./js/jquery-plugin.js"></script>
     </head>
 
     <body>
@@ -170,10 +172,284 @@
         </div>
         <!----------------------------end-banner-explore-blocks------------------------>
 
-        <!----------------------------ark-courses--------------------------------------->
+        <!----------------------------courses------------------------------------>
 
-
-        <!----------------------------end-ark-courses--------------------------------------->
+        <main class="container">
+            <h2 class="text-center mb-5 title-block">Our courses</h2>
+            <div class="arkmedis-all-courses">
+                <div class="courses-inner-main">
+                    <div class="random-courses-block">
+                        <div class="classes-top-bar">
+                            <div class="course-title-top active-course-title" data-filter="*">All courses</div>
+                            <div class="course-title-top" data-filter=".fiveclass">5th class</div>
+                            <div class="course-title-top" data-filter=".sixclass">6th class</div>
+                            <div class="course-title-top" data-filter=".sevenclass">7th class</div>
+                            <div class="course-title-top" data-filter=".eightclass">8th class</div>
+                            <div class="course-title-top" data-filter=".nineclass">9th class</div>
+                            <div class="course-title-top" data-filter=".tenclass">10th class</div>
+                        </div>
+                    </div>
+                    <div class="row all-courses-cards-block courses-sliders">
+                        <div class="fiveclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Five-Maths/1">Class Five Maths</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fiveclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Five-Science/2">Class Five Science</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fiveclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Five-English/3">Class Five English</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sixclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Six-Maths/4">Class Six Maths</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sixclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Six-Science/5">Class Six Science</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sevenclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Seven-Maths/6">Class Seven Maths</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sevenclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Seven-Science/7">Class Seven Science</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sevenclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Seven-English/8">Class Seven English</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eightclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Eight-Maths/9">Class Eight Maths</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eightclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Eight-Maths/10">Class Eight Maths</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eightclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Eight-Maths/11">Class Eight Maths</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="eightclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Eight-History/12">Class Eight History</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nineclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Nineth-Maths/13">Class Nineth Maths</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nineclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Nineth-English/14">Class Nineth English</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nineclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Nineth-Science/15">Class Nineth Science</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tenclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Tenth-Science/16">Class Tenth Science</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tenclass">
+                            <div class="course-card-item item">
+                                <div class="course-image-card"><img src="./img/sample.jpg" /></div>
+                                <div class="course-card-inner">
+                                    <div class="price">₹ 5000</div>
+                                    <div class="course-card-details">
+                                        <h5><a href="http://127.0.0.1:8000/course/Class-Tenth-Maths/17">Class Tenth Maths</a></h5>
+                                        <p>NCERT Solutions for Class 5 Maths is a very important resource for students of Class 6.</p>
+                                    </div>
+                                    <div class="view-course-btn">
+                                        <a href="#">View course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--------------------------end-ark-courses--------------------------------------->
 
         <!----------------------------Choose standards------------------------>
 
@@ -549,5 +825,7 @@
         <script src="js/slick.js"></script>
         <!-------------Custom JS----------->
         <script src="js/custom.js"></script>
+        <script src="js/coursecard_sliders.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
